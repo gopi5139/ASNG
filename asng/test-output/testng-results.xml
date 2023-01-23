@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ASAI_UI" duration-ms="58400" started-at="2023-01-19T03:09:28Z" finished-at="2023-01-19T03:10:27Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:asai.ui.runners.ASAIRunner@9629756]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="58400" started-at="2023-01-19T03:09:28Z" finished-at="2023-01-19T03:10:27Z">
+      <class name="asai.ui.runners.ASAIRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:asai.ui.runners.ASAIRunner@9629756]" name="setUpClass" is-config="true" duration-ms="1285" started-at="2023-01-19T08:39:28Z" finished-at="2023-01-19T08:39:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:asai.ui.runners.ASAIRunner@9629756]" name="initialize" is-config="true" duration-ms="27652" started-at="2023-01-19T08:39:29Z" finished-at="2023-01-19T08:39:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:asai.ui.runners.ASAIRunner@9629756]" name="runScenario" duration-ms="27343" started-at="2023-01-19T08:39:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-19T08:40:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Gold User Login to ASAI"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to ASAI]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="close()[pri:0, instance:asai.ui.runners.ASAIRunner@9629756]" name="close" is-config="true" duration-ms="0" started-at="2023-01-19T08:40:24Z" finished-at="2023-01-19T08:40:24Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Solutions Section > IR Services is not displayed expected [true] but found [false], Solutions Section > IR Services image is not displayed expected [true] but found [false], Solutions Section > Data Feeds is not displayed expected [true] but found [false], Solutions Section > Data Feeds image is not displayed expected [true] but found [false], Solutions Section > Expert Interviews is not displayed expected [true] but found [false], Solutions Section > Expert Interviews image is not displayed expected [true] but found [false], ASAI logo is not displayed expected [true] but found [false], Notification Icon is not displayed expected [true] but found [false], Profile Icon is not displayed expected [true] but found [false], Collapse Icon is not displayed expected [true] but found [false] expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Solutions Section > IR Services is not displayed expected [true] but found [false], Solutions Section > IR Services image is not displayed expected [true] but found [false], Solutions Section > Data Feeds is not displayed expected [true] but found [false], Solutions Section > Data Feeds image is not displayed expected [true] but found [false], Solutions Section > Expert Interviews is not displayed expected [true] but found [false], Solutions Section > Expert Interviews image is not displayed expected [true] but found [false], ASAI logo is not displayed expected [true] but found [false], Notification Icon is not displayed expected [true] but found [false], Profile Icon is not displayed expected [true] but found [false], Collapse Icon is not displayed expected [true] but found [false] expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at framework.WebDriverHelper.close_the_browser(WebDriverHelper.java:64)
+	at asai.ui.runners.ASAIRunner.close(ASAIRunner.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:521)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:736)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:asai.ui.runners.ASAIRunner@9629756]" name="tearDownClass" is-config="true" duration-ms="657" started-at="2023-01-19T08:40:26Z" finished-at="2023-01-19T08:40:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- asai.ui.runners.ASAIRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- ASAI_UI -->
+</testng-results>

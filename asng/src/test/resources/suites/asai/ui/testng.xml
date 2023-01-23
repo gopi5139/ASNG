@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ASAI_UI" configfailurepolicy="continue">
+  <test thread-count="5" name="Test" preserve-order="true">
+	<classes>
+		<class name="asai.ui.runners.ASAIRunner" />
+	</classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->
